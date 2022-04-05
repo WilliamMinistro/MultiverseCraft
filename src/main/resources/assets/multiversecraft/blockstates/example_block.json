@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "multiversecraft:block/example_block"
+		}
+	}
+}
