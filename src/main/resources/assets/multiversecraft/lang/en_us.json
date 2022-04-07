@@ -1,5 +1,6 @@
 {
-	"item.multiversecraft.example_item": "Example Item",
+	"item.multiversecraft.raw_parallite": "Raw Parallite",
+	"item.multiversecraft.rift_architect": "Rift Architect",
 	"itemGroup.multiversecraft": "Multiverse Craft Tab",
-	"block.multiversecraft.example_block": "Example Block"
+	"block.multiversecraft.parallite_ore": "Parallite Ore"
 }

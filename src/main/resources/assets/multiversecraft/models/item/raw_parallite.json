@@ -2,6 +2,6 @@
 	"parent": "item/generated",
 	"textures": 
 		{
-			"layer0": "multiversecraft:item/example_item"
+			"layer0": "multiversecraft:item/raw_parallite"
 		}
 }

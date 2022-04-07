@@ -3,6 +3,7 @@ package com.thatbeastbilly.multiversecraft.init;
 import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.thatbeastbilly.multiversecraft.MultiverseCraft;
+import com.thatbeastbilly.multiversecraft.block.ParalliteOre;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -19,8 +20,8 @@ public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MultiverseCraft.MOD_ID);
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
-	public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_RED).strength(3.0f).sound(SoundType.METAL).requiresCorrectToolForDrops()), 
+	public static final RegistryObject<Block> PARALLITE_ORE = register("parallite_ore", 
+			() -> new ParalliteOre(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 7)), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(MultiverseCraft.MULTIVERSE_TAB)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){
