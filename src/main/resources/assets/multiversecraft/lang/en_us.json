@@ -2,5 +2,6 @@
 	"item.multiversecraft.raw_parallite": "Raw Parallite",
 	"item.multiversecraft.rift_architect": "Rift Architect",
 	"itemGroup.multiversecraft": "Multiverse Craft Tab",
-	"block.multiversecraft.parallite_ore": "Parallite Ore"
+	"block.multiversecraft.parallite_ore": "Parallite Ore",
+	"block.multiversecraft.deepslate_parallite_ore": "Deepslate Parallite Ore"
 }

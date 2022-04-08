@@ -7,9 +7,9 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class ParalliteOre extends OreBlock {
+public class DeepslateParalliteOre extends OreBlock {
 	
-	public ParalliteOre(Properties properties) {
+	public DeepslateParalliteOre(Properties properties) {
 		super(properties);
 		
 	}
