@@ -22,11 +22,11 @@ public class BlockInit {
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
 	public static final RegistryObject<Block> PARALLITE_ORE = register("parallite_ore", 
-			() -> new ParalliteOre(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 7)), 
+			() -> new ParalliteOre(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 3)), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(MultiverseCraft.MULTIVERSE_TAB)));
 	
 	public static final RegistryObject<Block> DEEPSLATE_PARALLITE_ORE = register("deepslate_parallite_ore", 
-			() -> new DeepslateParalliteOre(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 7)), 
+			() -> new DeepslateParalliteOre(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 3)), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(MultiverseCraft.MULTIVERSE_TAB)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){

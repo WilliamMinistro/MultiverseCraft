@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	 "values": [
-	 	"multiversecraft:parallite_ore"
+	 	"multiversecraft:parallite_ore",
+	 	"multiversecraft:deepslate_parallite_ore"
 	 ]
 }
