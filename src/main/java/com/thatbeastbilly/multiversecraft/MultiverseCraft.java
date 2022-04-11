@@ -2,6 +2,7 @@ package com.thatbeastbilly.multiversecraft;
 
 import com.thatbeastbilly.multiversecraft.init.BlockInit;
 import com.thatbeastbilly.multiversecraft.init.ItemInit;
+import com.thatbeastbilly.multiversecraft.util.ModItemProperties;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -10,6 +11,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 
@@ -33,5 +35,9 @@ public class MultiverseCraft {
 		BlockInit.BLOCKS.register(bus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
+	}
+	
+	private void clientSetup(final FMLClientSetupEvent event) {
+		ModItemProperties.addCustomItemProperties();
 	}
 }
